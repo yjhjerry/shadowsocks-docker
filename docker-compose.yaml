@@ -1,0 +1,10 @@
+version: "3"
+services:
+   shadowsocks:
+        image: shadowsocks/shadowsocks-libev
+        container_name: ss
+        restart: always
+        ports:
+          - "443:8388"
+        environment:
+          - PASSWORD=helloworld123
